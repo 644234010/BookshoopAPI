@@ -1,0 +1,50 @@
+### -------- Get All Books
+
+GET http://localhost:3000/books HTTP/1.1
+content-type: application/json
+
+
+### -------- Get Book by Book Id
+GET http://localhost:3000/books/99 HTTP/1.1
+content-type: application/json
+
+### -------- Create Book
+POST http://localhost:3000/books HTTP/1.1
+content-type: application/json
+
+{
+    "bookid":98,
+    "title": "Data Miningxxx",
+    "isbn": "1234567890",
+    "pageCount": 304,
+    "publishedDate": "2023-09-14T00:00:00.000-0700",
+    "thumbnailUrl": "https://raw.githubusercontent.com/kesinee-bo/sp01/master/Books/unavailable.jpg",
+    "shortDescription": "Greate Book...Highly recommended. -- Choice Magazine",
+    "author": "64",
+    "category": "Machine Learning",
+    "price": 100
+}
+
+### -------- Get Book by Book Id
+GET http://localhost:3000/books/3 HTTP/1.1
+content-type: application/application/json
+
+### -------- Delete Book by Book Id
+DELETE http://localhost:3000/books/98 HTTP/1
+content-type: application/json
+
+### -------- Edit Book
+PUT http://localhost:3000/books/64 HTTP/1.1
+content-type: application/json
+
+{
+    "title": "Data Mining xxxx",
+    "isbn": "1234567890",
+    "pageCount": 304,
+    "publishedDate": "2023-09-14T00:00:00.000-0700",
+    "thumbnailUrl": "https://raw.githubusercontent.com/kesinee-bo/sp01/master/Books/unavailable.jpg",
+    "shortDescription": "Greate Book...Highly recommended. -- Choice Magazine",
+    "author": "64",
+    "category": "Machine Learning",
+    "price": 100
+}

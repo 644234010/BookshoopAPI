@@ -1,0 +1,22 @@
+
+### ---- Register ----
+POST http://localhost:3000/api/v2/users/auth/register HTTP/1.1
+content-type: application/json
+
+{
+      "username": "user2",
+      "role": "admin",
+      "password": "password"
+}
+
+### ---- Sign In ----
+
+POST http://localhost:3000/api/v2/users/auth/signin HTTP/1.1
+content-type: application/json
+
+{
+      "username": "user1",
+      "role": "admin",
+      "password": "password"
+}
+

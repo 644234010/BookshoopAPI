@@ -1,0 +1,50 @@
+### -------- Get All Book
+
+GET http://localhost:3000/api/v2/books HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwicm9sZSI6ImN1c3RvbWVyIiwicGFzc3dvcmQiOiIkMmEkMTAkWE1HTWVFMllvLlE3Rk4uWjFmT1BLLmV2NklzTS5NL0hPTDh0NHBGcERvN2VVUFBDOEV6VksiLCJpYXQiOjE3MDY2Mjg5ODV9.DuS5Oo4iasr1rNZzJRTm5voGK0LJlz_5DieOy8HgF8w
+
+### -------- Get Book by Book Id
+GET http://localhost:3000/api/v2/books/58 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwicm9sZSI6ImN1c3RvbWVyIiwicGFzc3dvcmQiOiIkMmEkMTAkWE1HTWVFMllvLlE3Rk4uWjFmT1BLLmV2NklzTS5NL0hPTDh0NHBGcERvN2VVUFBDOEV6VksiLCJpYXQiOjE3MDY2Mjg5ODV9.DuS5Oo4iasr1rNZzJRTm5voGK0LJlz_5DieOy8HgF8w
+
+### -------- Create Book
+POST  http://localhost:3000/api/v2/books HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwicm9sZSI6ImN1c3RvbWVyIiwicGFzc3dvcmQiOiIkMmEkMTAkWE1HTWVFMllvLlE3Rk4uWjFmT1BLLmV2NklzTS5NL0hPTDh0NHBGcERvN2VVUFBDOEV6VksiLCJpYXQiOjE3MDY2Mjg5ODV9.DuS5Oo4iasr1rNZzJRTm5voGK0LJlz_5DieOy8HgF8w
+
+{
+    "bookid":99,
+    "title": "Data Mini",
+    "isbn": "1234567890",
+    "pageCount": 304,
+    "publishedDate": "2023-09-14T00:00:00.000-0700",
+    "thumbnailUrl": "https://raw.githubusercontent.com/kesinee-bo/sp01/master/Books/unavailable.jpg",
+    "shortDescription": "Greate Book...Highly recommended. -- Choice Magazine",
+    "author": "64",
+    "category": "Machine Learning",
+    "price": 100
+}
+
+### -------- Edit Book
+PUT http://localhost:3000/api/v2/books/98 HTTP/1.1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwicm9sZSI6ImN1c3RvbWVyIiwicGFzc3dvcmQiOiIkMmEkMTAkWE1HTWVFMllvLlE3Rk4uWjFmT1BLLmV2NklzTS5NL0hPTDh0NHBGcERvN2VVUFBDOEV6VksiLCJpYXQiOjE3MDY2Mjg5ODV9.DuS5Oo4iasr1rNZzJRTm5voGK0LJlz_5DieOy8HgF8w
+
+{
+    "title": "Data Mining AIP",
+    "isbn": "1234567890",
+    "pageCount": 304,
+    "publishedDate": "2023-09-14T00:00:00.000-0700",
+    "thumbnailUrl": "https://raw.githubusercontent.com/kesinee-bo/sp01/master/Books/unavailable.jpg",
+    "shortDescription": "Greate Book...Highly recommended. -- Choice Magazine",
+    "author": "99",
+    "category": "Machine Learning API",
+    "price": 100
+}
+
+### -------- Delete Book by Book Id
+DELETE http://localhost:3000/api/v2/books/98 HTTP/1
+content-type: application/json
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6InVzZXIxIiwicm9sZSI6ImN1c3RvbWVyIiwicGFzc3dvcmQiOiIkMmEkMTAkWE1HTWVFMllvLlE3Rk4uWjFmT1BLLmV2NklzTS5NL0hPTDh0NHBGcERvN2VVUFBDOEV6VksiLCJpYXQiOjE3MDY2Mjg5ODV9.DuS5Oo4iasr1rNZzJRTm5voGK0LJlz_5DieOy8HgF8w
